@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Design tokens — the single source of truth for colour, type, space, motion.
+   The palette is monochrome by intent: the event key art is a black-and-white
+   photograph, so colour is spent only on one cold "earthlight" accent.
+   ========================================================================== */
+
+:root {
+  /* surface */
+  --void: #000000;
+  --base: #06070a;
+  --panel: #0a0c10;
+  --panel-2: #0e1116;
+  --line: rgba(255, 255, 255, 0.13);
+  --line-soft: rgba(255, 255, 255, 0.065);
+
+  /* ink */
+  --fg: #edf1f6;
+  --fg-mid: #aab2bc;
+  --fg-dim: #79818c;
+
+  /* accent */
+  --glint: #cfe0ff; /* earthlight */
+  --flare: #fff4e2; /* sun on the limb */
+
+  /* type */
+  --ff-display: var(--font-display), system-ui, sans-serif;
+  --ff-body: var(--font-body), system-ui, sans-serif;
+
+  /* space + layout */
+  --gutter: clamp(20px, 5vw, 72px);
+  --maxw: 1240px;
+  --section-y: clamp(54px, 8vw, 108px);
+
+  /* motion */
+  --t-fast: 160ms;
+  --t-norm: 320ms;
+  --t-slow: 700ms;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* layers */
+  --z-header: 100;
+  --z-drawer: 99;
+  --z-skip: 200;
+
+  color-scheme: dark;
+}
+
+/* The site is dark by design; both schemes resolve to the same tokens so the
+   page never renders half-light inside an embedded viewer. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+  }
+}
