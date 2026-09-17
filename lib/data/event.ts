@@ -2,7 +2,7 @@ export const EVENT = {
   name: 'Graviton',
   tagline: 'Hack the Orbit',
   edition: '2026',
-  host: "ISTE Students' Chapter, CGC University Mohali",
+  host: "ISTE Student Chapter, CGC University Mohali",
   collaborator: 'D4 Community',
   dates: '31 Oct – 1 Nov 2026',
   datesShort: '31 Oct – 1 Nov',

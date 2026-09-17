@@ -13,7 +13,7 @@ export type Host = {
 
 export const HOSTS: Host[] = [
   {
-    name: "ISTE Students' Chapter",
+    name: "ISTE Student Chapter",
     role: 'Organising chapter',
     note: 'Indian Society for Technical Education, CGC University Mohali.',
     logo: '/logos/iste.png',
